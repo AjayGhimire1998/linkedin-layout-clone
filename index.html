@@ -10,6 +10,7 @@
 <body>
     <main>
         <header class="header">
+
             <section class="logo-and-search">
                 <div class="logo">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
@@ -21,6 +22,21 @@
                     </svg>
                 </div>
                 <div class="search">
+                    <div class="search-icon">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="24px" height="16px" viewBox="0,0,256,256">
+                            <g fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(5.12,5.12)">
+                                    <path
+                                        d="M21,3c-9.39844,0 -17,7.60156 -17,17c0,9.39844 7.60156,17 17,17c3.35547,0 6.46094,-0.98437 9.09375,-2.65625l12.28125,12.28125l4.25,-4.25l-12.125,-12.09375c2.17969,-2.85937 3.5,-6.40234 3.5,-10.28125c0,-9.39844 -7.60156,-17 -17,-17zM21,7c7.19922,0 13,5.80078 13,13c0,7.19922 -5.80078,13 -13,13c-7.19922,0 -13,-5.80078 -13,-13c0,-7.19922 5.80078,-13 13,-13z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
                     <label for="search-bar"></label>
                     <input type="text" name="search" id="search-bar" placeholder="Search">
                 </div>
@@ -28,7 +44,21 @@
             <section class="menus">
                 <div class="menus-1">
                     <ul>
-                        <li>Home</li>
+
+                        <li> <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="24px"
+                                viewBox="0,0,256,256">
+                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                    <g transform="scale(3.55556,3.55556)">
+                                        <path
+                                            d="M36,10c-1.139,0 -2.27708,0.38661 -3.20508,1.16211l-21.27734,17.7793c-1.465,1.224 -1.96564,3.32881 -1.05664,5.00781c1.251,2.309 4.20051,2.79122 6.10352,1.19922l18.79492,-15.70313c0.371,-0.31 0.91025,-0.31 1.28125,0l18.79492,15.70313c0.748,0.626 1.6575,0.92969 2.5625,0.92969c1.173,0 2.33591,-0.51091 3.12891,-1.50391c1.377,-1.724 0.98597,-4.27055 -0.70703,-5.68555l-2.41992,-2.02148v-10.19922c0,-1.473 -1.19402,-2.66797 -2.66602,-2.66797h-2.66602c-1.473,0 -2.66797,1.19497 -2.66797,2.66797v3.51367l-10.79492,-9.01953c-0.928,-0.7755 -2.06608,-1.16211 -3.20508,-1.16211zM35.99609,22.92578l-22,18.37695v8.69727c0,4.418 3.582,8 8,8h28c4.418,0 8,-3.582 8,-8v-8.69727zM32,38h8c1.105,0 2,0.895 2,2v10h-12v-10c0,-1.105 0.895,-2 2,-2z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg><span>Home</span></li>
                         <li>My Network</li>
                         <li>Jobs</li>
                         <li>Messaging</li>
@@ -78,6 +108,8 @@
 
         .logo-and-search {
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .logo {
@@ -86,22 +118,42 @@
 
         }
 
+        .search {
+            display: flex;
+            /* align-items: center; */
+            align-items: center;
+            width: 373px;
+            height: 34px;
+        }
+
+        .search-icon {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            left: 50px;
+        }
+
+
+
         #search-bar {
+            border-radius: 4px;
             background-color: #38434f;
             font-size: 14px;
-            color:  rgba(255, 255, 255, 0.9);
+            color: rgba(255, 255, 255, 0.9);
             line-height: 24.5px;
-            outline: none;
+            outline: none !important;
+            border: none;
             transition: box-shadow 0.084s cubic-bezier(0.34, 0, 0.21, 1) 0s;
-            vertical-align: middle;
-            /* height: 34px;
-            width: 280px; */
-            padding-left: 30px;
-            box-sizing: border-box;
+            /* vertical-align: middle; */
+            height: 34px;
+            width: 280px;
+            padding-left: 40px;
+            /* box-sizing: border-box; */
 
         }
-        #search-bar::placeholder{
-            color:  rgba(255, 255, 255, 0.6);
+
+        #search-bar::placeholder {
+            color: rgba(255, 255, 255, 0.6);
         }
 
         .menus {
@@ -113,6 +165,13 @@
             list-style: none;
             font-size: 12px;
             ;
+        }
+
+        .menus-1>ul>li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 
