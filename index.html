@@ -90,15 +90,60 @@
             </div>
 
         </section>
+        <section class="show-more">
+            <p><span>Show more </span><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0,0,256,256">
+                    <g fill-opacity="0.74902" fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                        stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(8.53333,8.53333)">
+                            <path
+                                d="M3,12v-2c0,-0.386 0.223,-0.738 0.572,-0.904c0.349,-0.166 0.762,-0.115 1.062,0.13l10.366,8.482l10.367,-8.482c0.299,-0.245 0.712,-0.295 1.062,-0.13c0.35,0.165 0.571,0.518 0.571,0.904v2c0,0.3 -0.135,0.584 -0.367,0.774l-11,9c-0.369,0.301 -0.898,0.301 -1.267,0l-11,-9c-0.231,-0.19 -0.366,-0.474 -0.366,-0.774z">
+                            </path>
+                        </g>
+                    </g>
+                </svg></p>
+        </section>
+
+        <section class="share-box-container">
+            <div class="share-box-wrapper">
+                <div class="share-box-post">
+                    <div class="profile-pic"></div>
+                    <div class="post-button-wrapper">
+                        <button class="post-button"> <span>Start a post</span></button>
+                    </div>
+                </div>
+                <div class="share-box-links">
+                    <div class="media">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="50px" height="50px" viewBox="0,0,256,256">
+                            <g fill="#71b7fa" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(5.12,5.12)">
+                                    <path
+                                        d="M0,5v24.58594l11.15625,-11.15625l4.30469,6.46094l4.86719,-0.97656l4.08594,4.08594h5.90625l7,5h12.67969v-28zM37.5,14c1.93359,0 3.5,1.56641 3.5,3.5c0,1.93359 -1.56641,3.5 -3.5,3.5c-1.93359,0 -3.5,-1.56641 -3.5,-3.5c0,-1.93359 1.56641,-3.5 3.5,-3.5zM10.84375,21.57031l-10.84375,10.84375v12.58594h50v-10h-13.32031l-7,-5h-6.09375l-3.91406,-3.91406l-5.13281,1.02344z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>Media</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
     <style>
         :root {
             --primary-text-color: #ffffff;
-            --primary-text-color-gray: #ffffff99;
-            --secondary-color: #000000;
-            --nav-background: #1b1f23;
+            --primary-text-color-gray: #ffffffbf;
+            --secondary-color-gray: rgba(255, 255, 255, 0.4);
+            --background-color: #1b1f23;
+            ;
             --profile-image: url("./pp.png");
             --bg-image: url("./bg.png");
         }
@@ -238,11 +283,12 @@
         }
 
         .profile-container {
-            position: relative;
-            top: 12px;
+            /* position: relative; */
+            /* top: 12px; */
+            margin-top: 12px;
             max-width: 100%;
-            background-color: #1b1f23;
-            height: 185px;
+            background-color: var(--background-color);
+
 
 
         }
@@ -252,6 +298,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 185px;
             /* padding: 16px 16px 12px; */
         }
 
@@ -293,11 +340,11 @@
         .profile-name {
             color: white;
             font-size: 16px;
-           height: 24px;
+            height: 24px;
         }
 
-        .profile-description{
-            color: rgba(255, 255, 255, 0.6);
+        .profile-description {
+            color: var(--primary-text-color-gray);
             font-size: 12px;
             text-align: center;
             height: 32px;
@@ -305,6 +352,77 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .show-more {
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .show-more>p {
+            color: #ffffffbf;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .share-box-container {
+            margin-top: 12px;
+            height: 116px;
+            max-width: 100%;
+            background-color: var(--background-color)
+        }
+
+        .share-box-container .share-box-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .share-box-container .share-box-wrapper .share-box-post {
+            display: flex;
+            margin: 8px 16px 0px;
+        }
+
+        .share-box-container .share-box-wrapper .share-box-post .profile-pic {
+            background: url("./pp.png");
+            border-radius: 50%;
+            /* height: 200px; */
+            height: 48px;
+            width: 48px;
+            background-size: 130%;
+            background-repeat: no-repeat;
+            background-position: center top;
+
+        }
+
+        .share-box-container .share-box-wrapper .share-box-post .post-button-wrapper {}
+
+        .share-box-container .share-box-wrapper .share-box-post .post-button-wrapper .post-button {
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 10px 20px;
+            text-align: left;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 32px;
+            background-color: var(--background-color);
+            width: 342px;
+        }
+
+        .share-box-container .share-box-wrapper .share-box-post .post-button-wrapper .post-button>span {
+            color: #ffffffbf;
+            font-weight: 600;
         }
     </style>
 
