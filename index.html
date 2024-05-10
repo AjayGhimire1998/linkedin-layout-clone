@@ -237,35 +237,53 @@
 
         }
 
-        .profile-container{
+        .profile-container {
+            position: relative;
+            top: 12px;
             max-width: 100%;
             background-color: #1b1f23;
             height: 185px;
-            
+
         }
 
-        .profile-container .profile-wrapper{
+        .profile-wrapper {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
-        .profile-container .profile-wrapper .background-pic{
+        .profile-container .profile-wrapper .background-pic {
             background: url("./bg.png");
             background-size: cover;
             background-position: center;
             /* height: 150px; */
+            height: 56.25px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
         }
 
-        .profile-container .profile-wrapper .profile-pic{
-            background-image: url("./pp.png");
+        .profile-container .profile-wrapper .profile-pic {
+            background: url("./pp.png");
             border-radius: 50%;
-            height: 200px;
+            /* height: 200px; */
+            height: 72px;
+            width: 72px;
+            background-size: 130%;
+            background-repeat: no-repeat;
+            background-position: center top;
+
+            position: relative;
+            top: -36px;
+            border: 2px solid rgb(27, 31, 35);
         }
 
-        .description{
+        .description {
             color: #dddddd;
         }
 
-        .profile-name{
+        .profile-name {
             color: white;
         }
     </style>
