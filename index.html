@@ -24,7 +24,7 @@
                 <div class="search">
                     <div class="search-icon">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="24px" height="16px" viewBox="0,0,256,256">
+                            width="24px" height="24px" viewBox="0,0,256,256">
                             <g fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                                 stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
                                 font-family="none" font-weight="none" font-size="none" text-anchor="none"
@@ -51,37 +51,45 @@
                                 </path>
                             </svg><span>Home</span></li>
                         <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
-                                fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                fill="#dddddd" class="mercado-match" width="24" height="24" focusable="false">
                                 <path
                                     d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z">
                                 </path>
                             </svg> <span>My Network</span></li>
                         <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
-                                fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                fill="#dddddd" class="mercado-match" width="24" height="24" focusable="false">
                                 <path
                                     d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z">
                                 </path>
                             </svg><span>Jobs</span></li>
                         <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
-                                fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                fill="#dddddd" class="mercado-match" width="24" height="24" focusable="false">
                                 <path
                                     d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z">
                                 </path>
                             </svg><span>Messaging</span></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
-                            <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
-                          </svg><span>Notifications</span></li>
-                          <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
-                            <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
-                          </svg><span>Me</span></li>
+                        <li>
+                            <div class="pp"></div><span>Me</span>
+                        </li>
                     </ul>
-                </div>
-                <div class="menus-2">
-
                 </div>
             </section>
 
         </header>
+        <section class="profile-container">
+            <div class="profile-wrapper">
+                <div class="background-pic">
+
+                </div>
+                <div class="profile-pic"></div>
+                <div class="description">
+                    <h2 class="profile-name">Ajay Ghimire</h2>
+                    <p class="profile-description">Software Engineer at YashiTech || JavaScript, TypeScript, React.js,
+                        Next.js, Ruby on Rails || Exploring New Opportunities || Let’s Chat!</p>
+                </div>
+            </div>
+
+        </section>
     </main>
 
 
@@ -91,15 +99,24 @@
             --primary-text-color-gray: #ffffff99;
             --secondary-color: #000000;
             --nav-background: #1b1f23;
+            --profile-image: url("./pp.png");
+            --bg-image: url("./bg.png");
         }
 
-        @import url();
+
+
+        * {
+            font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
 
         body {
-            font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+
             background-color: #000000;
             color: white;
-            box-sizing: border-box;
+
 
 
         }
@@ -108,24 +125,29 @@
             border: 1px solid rgba(140, 140, 140, 0.25);
             background-color: #1b1f23;
             display: flex;
-            position: fixed;
+            position: sticky;
             left: 0;
             top: 0;
             right: 0;
             height: 53px;
-
+            max-width: 100%;
+            /* justify-content: center; */
+            padding-left: 24px;
+            padding-right: 24px;
             align-items: center;
+
         }
 
         .logo-and-search {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
+            max-width: 358px;
         }
 
         .logo {
             /* height: 40px; */
-            width: 40px;
+            width: 41px;
 
         }
 
@@ -133,15 +155,18 @@
             display: flex;
             /* align-items: center; */
             align-items: center;
-            width: 373px;
+            /* width: 373px; */
             height: 34px;
+
         }
 
         .search-icon {
-            position: absolute;
+            position: relative;
             display: flex;
             align-items: center;
-            left: 50px;
+            justify-content: center;
+            left: 10px;
+            width: 56px;
         }
 
 
@@ -161,21 +186,30 @@
             padding-left: 40px;
             /* box-sizing: border-box; */
 
+            display: none;
+
         }
 
         #search-bar::placeholder {
             color: rgba(255, 255, 255, 0.6);
         }
 
-        .menus {
+        .menus-1 {
             display: flex;
+            max-width: 100%;
+            margin-left: 15px;
         }
+
+
 
         .menus-1>ul {
             display: flex;
+            justify-content: space-evenly;
+            width: 100%;
             list-style: none;
             font-size: 12px;
-            gap: 30px;
+            gap: 10px;
+
         }
 
         .menus-1>ul>li {
@@ -183,6 +217,56 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 48px;
+        }
+
+        .menus-1>ul>li>span {
+            display: none;
+        }
+
+        .menus-1>ul li .pp {
+            background: url("./pp.png");
+            background-size: cover;
+            /* Scale the background image to be as large as possible so that the background area is completely covered by the background image */
+            background-position: center;
+            /* Center the background image */
+
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+
+        }
+
+        .profile-container{
+            max-width: 100%;
+            background-color: #1b1f23;
+            height: 185px;
+            
+        }
+
+        .profile-container .profile-wrapper{
+            display: flex;
+        }
+
+        .profile-container .profile-wrapper .background-pic{
+            background: url("./bg.png");
+            background-size: cover;
+            background-position: center;
+            /* height: 150px; */
+        }
+
+        .profile-container .profile-wrapper .profile-pic{
+            background-image: url("./pp.png");
+            border-radius: 50%;
+            height: 200px;
+        }
+
+        .description{
+            color: #dddddd;
+        }
+
+        .profile-name{
+            color: white;
         }
     </style>
 
